@@ -25,7 +25,7 @@ Create an outlet in the view controller for:
 In the ViewController
 ---------------------
 
-::
+```
     // The outlets and some variables:
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
@@ -184,7 +184,7 @@ In the ViewController
             }
         }
     }
-
+```
 
 References
 ----------
