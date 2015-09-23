@@ -1,5 +1,5 @@
 ## List all characters that are in a character set
-```
+```swift
 /**
 Get all of the characters that are in the given character set.
 
@@ -23,6 +23,6 @@ func charsInCharset(charset: NSCharacterSet) -> [Character] {
 ```
 
 Usage:
-```
+```swift
 charsInCharset(NSCharacterSet.URLPathAllowedCharacterSet())
 ```

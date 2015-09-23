@@ -1,7 +1,7 @@
 ## Add keyboard accessory view for text field
 
 This can be used to add a done button in a bar over the keyboard, for example for a numeric keypad:
-```
+```swift
 // From http://stackoverflow.com/a/25140225/948341 :
 func addDoneButton() {
     let keyboardToolbar = UIToolbar()

@@ -5,7 +5,7 @@ In a non-git-tracked file, create a Config extension that
 implements OverriddenConfig.
 
 app/config.swift:
-```
+```swift
 protocol OverriddenConfig {
     func overrideConfig()
 }
@@ -22,7 +22,7 @@ class Config {
 ```
 
 app/config-local.swift:
-```
+```swift
 extension Config: OverriddenConfig {
     func overrideConfig() {
         config["foo"] = "bar"
@@ -31,7 +31,7 @@ extension Config: OverriddenConfig {
 ```
 
 Using it:
-```
+```swift
 let config = Config.sharedInstance.config
 ```
 

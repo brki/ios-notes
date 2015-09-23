@@ -1,5 +1,5 @@
 Convert a dictionary of parameters into a URL-encoded query string:
-```
+```swift
 func queryStringFromParams(params: [String: String], includingLeadingQueryIndicator: Bool = true) -> String? {
     if count(params) == 0 {
         return ""

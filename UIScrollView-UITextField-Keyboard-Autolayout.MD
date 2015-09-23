@@ -4,8 +4,7 @@ with editable text fields.  The view fits in the window; e.g. the content is not
 When the keyboard pops up or changes size, the currently active text field will be scrolled into view if necessary
 (e.g. if it would otherwise be hidden beneath the keyboard).
 
-In the storyboard
------------------
+## In the storyboard
 In the storyboard, add a UIScrollView as a child of the main view.  Add a child view to the UIScrollView, which we'll
 refer to as the content view.
 
@@ -15,17 +14,16 @@ refer to as the content view.
 
 Inside the content view, layout the text fields and other elements.
 
-Storyboard outlets
-------------------
+## Storyboard outlets
 Create an outlet in the view controller for:
 
 * the UIScrollView (the code below calls it ``scrollView``)
 * the content view (the code below calls it ``contentView``)
 
-In the ViewController
----------------------
+## In the ViewController
 
-The important parts are::
+The important parts are:
+```swift
 
     // The outlets and some variables:
     @IBOutlet weak var scrollView: UIScrollView!
@@ -185,10 +183,9 @@ The important parts are::
             }
         }
     }
+```
 
-
-References
-----------
+## References
 
 * http://spin.atomicobject.com/2014/03/05/uiscrollview-autolayout-ios/
 * https://developer.apple.com/library/ios/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html
